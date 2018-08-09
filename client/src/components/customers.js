@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './customers.css';
+import React, { Component } from "react";
+import "./customers.css";
 
 class Customers extends Component {
   constructor() {
@@ -10,9 +10,13 @@ class Customers extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/customers')
+    fetch("/api/customers")
       .then(res => res.json())
-      .then(customers => this.setState({customers}, () => console.log('Customers fetched...', customers)));
+      .then(customers =>
+        this.setState({ customers }, () =>
+          console.log("Customers fetched...", customers)
+        )
+      );
   }
 
   render() {
@@ -20,9 +24,11 @@ class Customers extends Component {
       <div>
         <h2>Customers</h2>
         <ul>
-        {this.state.customers.map(customer => 
-          <li key={customer.id}>{customer.firstName} {customer.lastName}</li>
-        )}
+          {this.state.customers.map(customer => (
+            <li key={customer.id}>
+              {customer.firstName} {customer.lastName}
+            </li>
+          ))}
         </ul>
       </div>
     );

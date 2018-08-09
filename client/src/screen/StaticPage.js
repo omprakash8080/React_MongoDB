@@ -159,7 +159,6 @@ export default class StaticPage extends React.Component {
 
   render() {
     // console.log(JSON.stringify(this.state.message));
-
     return (
       <div>
         <Row>

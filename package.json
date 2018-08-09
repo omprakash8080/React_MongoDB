@@ -16,7 +16,12 @@
     "nodemon": "^1.14.6"
   },
   "dependencies": {
+    "antd": "^3.8.0",
+    "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^5.2.7",
+    "react-flexbox-grid": "^2.1.2",
+    "react-list": "^0.8.10"
   }
 }
